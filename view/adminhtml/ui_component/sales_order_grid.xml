@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <exportButton class="Magento\Ui\Component\ExportButton" name="export_button">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="selectProvider" xsi:type="string">sales_order_grid.sales_order_grid.sales_order_columns.ids</item>
+                    <item name="options" xsi:type="array">
+                        <item name="my_csv" xsi:type="array">
+                            <item name="value" xsi:type="string">my_csv_custom</item>
+                            <item name="label" xsi:type="string" translate="true">CSV + SKU, Fee, Coupon</item>
+                            <item name="url" xsi:type="string">report/export/CustomExport</item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </exportButton>
+    </listingToolbar>
+</listing>
